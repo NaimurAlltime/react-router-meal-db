@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home";
+import Products from "./Components/Products/Products";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,12 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About></About>,
+      },
+      {
+        path: "products",
+        element: <Products></Products>,
+        loader: () =>
+          fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=fish"),
       },
       {
         path: "contact",

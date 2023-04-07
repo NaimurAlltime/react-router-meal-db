@@ -11,6 +11,9 @@ const Header = () => {
         <Link className="pr-12 hover:text-fuchsia-400" to="/about">
           About
         </Link>
+        <Link className="pr-12 hover:text-fuchsia-400" to="/products">
+          Products
+        </Link>
         <Link className="pr-12 hover:text-fuchsia-400" to="/contact">
           Contact
         </Link>
